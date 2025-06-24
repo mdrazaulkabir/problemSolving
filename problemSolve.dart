@@ -27,16 +27,54 @@ import 'dart:io';
 // }
 
 
-//problem : all number digit added result
- main(){
- print("Enter number:");
- int num1=int.parse(stdin.readLineSync()!);
- double temp=num1.toDouble();
- int result=0;
- while(temp!=0){
-   double remain=temp%10;
-   result=result+remain.toInt();
-   temp=temp/10;
- }
- print("All digit number add is :$result");
+// //problem : all number digit added result
+//  main(){
+//  print("Enter number:");
+//  int num1=int.parse(stdin.readLineSync()!);
+//  double temp=num1.toDouble();
+//  int result=0;
+//  while(temp!=0){
+//    double remain=temp%10;
+//    result=result+remain.toInt();
+//    temp=temp/10;
+//  }
+//  print("All digit number add is :$result");
+// }
+
+
+// //problem: GCD(greatest common divisor) LCM(least common multiplicaiton)
+main(){
+  print("Enter two number:");
+  int num1=int.parse(stdin.readLineSync()!);
+  int num2=int.parse(stdin.readLineSync()!);
+  while(num2!=0){
+    double remain=num1.toDouble()%num2.toDouble();
+    num1=num2;
+    num2=remain.toInt();
+  }
+  print("GCD is $num1");
+  double LCMvalue=(num1*num2)/num1;
+  print("LCM is $LCMvalue");
 }
+
+
+// //problem : prime number(without 1 and itself . Not divide any of number)
+// main(){
+//   print("Enter one number:");
+//   int count=0;
+//   int num1=int.parse(stdin.readLineSync()!);
+//   for(int i=2; i<num1; i++){
+//     if(num1%i==0){
+//       count++;
+//       break;
+//     }
+//   }
+//   if(count==0){
+//     print("$num1 this is the prime number!");
+//   }
+//   else{
+//     print("$num1 this is not prime number!");
+//   }
+// }
+
+
