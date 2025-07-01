@@ -140,3 +140,19 @@ import 'dart:math';
 // }
 
 
+//problem 9: series 1*2 + 2*3 + 3*4 + 4*5 + 5*6.....
+main(){
+  print("Enter two number:");
+  int num1=int.parse(stdin.readLineSync()!);
+  int num2=int.parse(stdin.readLineSync()!);
+
+  int result=0,a=1,b=2;
+
+  while(a<=num1 && b<=num2){
+    print("$a*$b");
+      result=result+a*b;
+      a++;
+      b++;
+  }
+  print("1 to $num1*$num2 multiplication this series result:$result");
+}
