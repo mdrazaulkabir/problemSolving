@@ -158,7 +158,11 @@ import 'dart:io';
 
 
 
-// //problem : prime number(without 1 and itself . Not divide any of number)
+
+
+
+
+// // //problem : prime number(without 1 and itself . Not divide any of number)
 main(){
   print("Enter one number:");
   int count=0;
@@ -166,13 +170,12 @@ main(){
   for(int i=2; i<num1; i++){
     if(num1%i==0){
       count++;
-      break;
     }
   }
   if(count==0){
-    print("$num1 this is the prime number!");
+    print("$num1 int this prime number! ");
   }
   else{
-    print("$num1 this is not prime number!");
+    print("$num1 this is not prime number!$count");
   }
 }

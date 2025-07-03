@@ -140,19 +140,62 @@ import 'dart:math';
 // }
 
 
-//problem 9: series 1*2 + 2*3 + 3*4 + 4*5 + 5*6.....
-main(){
-  print("Enter two number:");
-  int num1=int.parse(stdin.readLineSync()!);
-  int num2=int.parse(stdin.readLineSync()!);
+// //problem 10: series 1*2 + 2*3 + 3*4 + 4*5 + 5*6.....
+// main(){
+//   print("Enter two number:");
+//   int num1=int.parse(stdin.readLineSync()!);
+//   int num2=int.parse(stdin.readLineSync()!);
 
-  int result=0,a=1,b=2;
+//   int result=0,a=1,b=2;
+//   while(a<=num1 && b<=num2){
+//     print("$a*$b");
+//       result=result+a*b;
+//       a++;
+//       b++;
+//   }
+//   print("1 to $num1*$num2 multiplication this series result:$result");
+// }
 
-  while(a<=num1 && b<=num2){
-    print("$a*$b");
-      result=result+a*b;
-      a++;
-      b++;
-  }
-  print("1 to $num1*$num2 multiplication this series result:$result");
-}
+
+// //problem 11: fibonacci series 0 1 1 2 3 5 8 ..... (fibonacci = first number +second number)
+// void main(){
+//   print("Enter one number:");
+//   int num1=int.parse(stdin.readLineSync()!);
+//   int count=0, first =0, second=1,fibonacci=0;
+//   while(count<=num1){
+//     if(count<=1){
+//       fibonacci=count;
+//     }
+//     else{
+//       fibonacci=first+second;
+//       first=second;
+//       second=fibonacci;
+//     }
+//     print(fibonacci);
+//     count++;
+//   }
+// }
+
+
+// //problem 12: lucas series 2 1 3 4 7 11 18..... (lucas = first number +second number)
+// void main(){
+//   print("Enter how many Lucas numbers you want to see:");
+//   int num1=int.parse(stdin.readLineSync()!);
+//   int count=2, first =2, second=1,lucasSeries=0;
+//   if(num1>=1) print(first);
+//   if(num1>=2) print(second);
+//   while(count<=num1){
+//       lucasSeries=first+second;
+//       print(lucasSeries);
+//       first=second;
+//       second=lucasSeries;
+//     count++;
+//   }
+ 
+//   // for(int i =3; i<=num1; i++){     /* you can also solve by for loop */
+//   //     lucasSeries=first+second;
+//   //     print(lucasSeries);
+//   //     first=second;
+//   //     second=lucasSeries;
+//   // }
+// }
