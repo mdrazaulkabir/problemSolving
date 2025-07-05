@@ -79,3 +79,19 @@ import 'dart:io';
 // }
 
 
+// //problem 5: 
+// //* * *
+// //* *
+// //* 
+// main(){
+//     print("Enter one number:");
+//     int num1=int.parse(stdin.readLineSync()!);
+//     //for (int row = num1; num1 >= 1; row--)   vvi   You are checking num1 >= 1, but num1 never changes inside the loop.
+//     for(int row=num1; row>=1; row--){
+//         for(int column=1; column<=row; column++){
+//             // print("*");
+//             stdout.write("* ");
+//         }
+//         print("");
+//     }
+// }
