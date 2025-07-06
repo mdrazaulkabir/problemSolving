@@ -1,4 +1,5 @@
 import 'dart:io';
+//import 'dart:async';
 
 // //problem 1: 
 // //1
@@ -78,6 +79,7 @@ import 'dart:io';
 //   }
 // }
 
+ 
 
 // //problem 5: 
 // //* * *
@@ -93,5 +95,66 @@ import 'dart:io';
 //             stdout.write("* ");
 //         }
 //         print("");
+//     }
+// }
+
+
+ 
+// //problem 6 : 
+// //*
+// //* *
+// //* * *
+// //* *
+// //* 
+// main(){
+//     print("Enter one number:");
+//     int num1=int.parse(stdin.readLineSync()!);
+//     for(int row=1; row<=num1; row++){
+//         for(int column=1; column<=row; column++){
+//             stdout.write("* ");
+//         }
+//         print("");
+//     }
+//     for(int row=num1-1; row>=1; row--){
+//         for(int column=1; column<=row; column++){
+//             stdout.write("* ");
+//         }
+//         print(" ");
+//     }
+
+// }
+
+
+// //problem 7 : with async function used future type function also await(like anymation)
+// //*
+// //* *
+// //* * *
+// //* * * *
+// //* *
+// //* 
+// main()async{
+//     print("Enter one number:");
+//     int num1=int.parse(stdin.readLineSync()!);
+//     await forLoop(num1);
+//     await forLoop2(num1);
+// }
+
+// Future<void> forLoop(int num1)async{
+//     for(int row=1; row<=num1; row++){
+//         for(int column=1; column<=row; column++){
+//              stdout.write("* ");
+//         }
+//         print("");
+//         await Future.delayed(Duration(milliseconds: 100));
+//     }
+// }
+
+// Future<void> forLoop2(int num1)async{
+//      for(int row=num1-1; row>=1; row--){
+//         for(int column=1; column<=row; column++){
+//             stdout.write("* ");
+//         }
+//         print("");
+//         await Future.delayed(Duration(milliseconds: 500));
 //     }
 // }
