@@ -121,8 +121,10 @@ import 'dart:io';
 //         }
 //         print(" ");
 //     }
-
 // }
+
+
+
 
 
 // //problem 7 : with async function used future type function also await(like anymation)
@@ -156,5 +158,45 @@ import 'dart:io';
 //         }
 //         print("");
 //         await Future.delayed(Duration(milliseconds: 500));
+//     }
+// }
+
+
+//problem 8: 
+// //    *
+// //  * *
+// //* * *
+// main(){
+//     print("Enter one number:");
+//     int num1=int.parse(stdin.readLineSync()!);
+//     for(int row=1; row<=num1; row++){
+//         for(int column=1; column<=num1-row; column++){
+//             stdout.write("  ");    // vvi this space most important to print above the pattern (other wise will be not match)
+//         }
+//         for(int column=1; column<=row; column++){
+//             stdout.write("* ");
+//         }
+//         print(" ");
+//     }
+// }
+
+
+
+//problem 9: 
+// //* * *
+// //  * *
+// //    * 
+// main(){
+//     print("Enter one number:");
+//     int num1=int.parse(stdin.readLineSync()!);
+//     for(int row=num1; row>=1; row--){
+
+//         for(int column=1; column<=num1-row; column++){
+//             stdout.write("  ");
+//         }
+//         for(int column=1; column<=row; column++){
+//             stdout.write("* ");
+//         }
+//         print(" ");
 //     }
 // }
