@@ -190,7 +190,6 @@ import 'dart:io';
 //     print("Enter one number:");
 //     int num1=int.parse(stdin.readLineSync()!);
 //     for(int row=num1; row>=1; row--){
-
 //         for(int column=1; column<=num1-row; column++){
 //             stdout.write("  ");
 //         }
@@ -198,5 +197,36 @@ import 'dart:io';
 //             stdout.write("* ");
 //         }
 //         print(" ");
+//     }
+// }
+
+
+// //problem 10: 
+// //    *
+// //  * *
+// //* * *
+// //  * *
+// //    * 
+// main(){
+//     print("Enter one number:");
+//     int num1=int.parse(stdin.readLineSync()!);
+//     for(int row=1; row<=num1; row++){
+//         for(int column=1; column<=num1-row; column++){
+//             stdout.write("  ");
+//         }
+//         for(int column=1; column<=row; column++){
+//             stdout.write("* ");
+//         }
+//         print("");
+//     }
+
+//     for(int row=num1-1; row>=1; row--){
+//         for(int column=1; column<=num1-row; column++){
+//             stdout.write("  ");
+//         }
+//         for(int column=1; column<=row; column++){
+//             stdout.write("* ");
+//         }
+//         print("");
 //     }
 // }
