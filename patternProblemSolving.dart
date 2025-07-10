@@ -230,3 +230,57 @@ import 'dart:io';
 //         print("");
 //     }
 // }
+
+
+// //problem 11: 
+// //* * * * 
+// //* * * *
+// //* * * * 
+// main(){
+//     print("Enter one number:");
+//     int num1=int.parse(stdin.readLineSync()!);
+//     for(int row=1; row<=num1; row++){
+//         for(int column=1; column<=num1; column++){
+//             stdout.write("* ");
+//         }
+//         print(" ");
+//     }
+// }
+
+
+
+// //problem 12: 
+// //A B C D E
+// //A B C D E
+// //A B C D E
+// //A B C D E
+// main()async{
+//     print("Enter one number:");
+//     int num1=int.parse(stdin.readLineSync()!);
+//     await forLoop1(num1);
+// }
+// Future<void> forLoop1(int num1)async{
+//   for(int row=1; row<=num1; row++){
+//         for(int column=1; column<=num1; column++){
+//             stdout.write("${String.fromCharCode(column+64)} ");
+//         }
+//         print(" ");
+//         await Future.delayed(Duration(seconds: 1));
+//     }
+// }
+
+
+
+//problem 11: 
+// //      * 
+// //   *  *  *
+// //*  *  *  *  *
+// //   *  *  *
+// //      *  
+
+// main(){
+//   print("Enter one number:");
+//   int num1=int.parse(stdin.readLineSync()!);
+// }
+
+
