@@ -79,6 +79,24 @@ import 'dart:io';
 //   }
 // }
 
+
+//problem 4: 
+//1
+//1 0
+//1 0 1
+main(){
+  print('Enter one number :');
+  int num1=int.parse(stdin.readLineSync()!);
+
+  for(int row=1; row<=num1;row++){
+      for(int column=1; column<=row; column++){
+           stdout.write("${String.fromCharCode(row+64)} "); //don't create newline  which like in c programme 
+           //print("*");       // create new line automatically 
+      }
+     // print(" ");  
+     stdout.write("\n");
+  }
+}
  
 
 // //problem 5: 
@@ -273,7 +291,7 @@ import 'dart:io';
 
 //problem 11: 
 // //      * 
-// //   *  *  *
+// //   *  *  *       //2*row-1
 // //*  *  *  *  *
 // //   *  *  *
 // //      *  
@@ -281,6 +299,27 @@ import 'dart:io';
 // main(){
 //   print("Enter one number:");
 //   int num1=int.parse(stdin.readLineSync()!);
+//   for(int row=1; row<=num1;row++){
+//     for(int column=1;column<=num1-row;column++){
+//         stdout.write("  ");
+//     }
+//     for(int column=1;column<=2*row-1;column++){
+//         stdout.write("* ");
+//     }
+//     print(" ");
+//   }
+
+//     for(int row=num1; row>=1;row--){
+//     for(int column=1;column<=num1-row;column++){
+//         stdout.write("  ");
+//     }
+//     for(int column=1;column<=2*row-1;column++){
+//         stdout.write("* ");
+//     }
+//     print(" ");
+//   }
+
+
 // }
 
 
