@@ -80,23 +80,23 @@ import 'dart:io';
 // }
 
 
-//problem 4: 
-//1
-//1 0
-//1 0 1
-main(){
-  print('Enter one number :');
-  int num1=int.parse(stdin.readLineSync()!);
+// //problem 4: 
+// //A
+// //A B
+// //A B C
+// main(){
+//   print('Enter one number :');
+//   int num1=int.parse(stdin.readLineSync()!);
 
-  for(int row=1; row<=num1;row++){
-      for(int column=1; column<=row; column++){
-           stdout.write("${String.fromCharCode(row+64)} "); //don't create newline  which like in c programme 
-           //print("*");       // create new line automatically 
-      }
-     // print(" ");  
-     stdout.write("\n");
-  }
-}
+//   for(int row=1; row<=num1;row++){
+//       for(int column=1; column<=row; column++){
+//            stdout.write("${String.fromCharCode(column+64)} "); //don't create newline  which like in c programme 
+//            //print("*");       // create new line automatically 
+//       }
+//      // print(" ");  
+//      stdout.write("\n");
+//   }
+// }
  
 
 // //problem 5: 
@@ -289,7 +289,7 @@ main(){
 
 
 
-//problem 11: 
+//problem 13: 
 // //      * 
 // //   *  *  *       //2*row-1
 // //*  *  *  *  *
@@ -309,7 +309,7 @@ main(){
 //     print(" ");
 //   }
 
-//     for(int row=num1; row>=1;row--){
+//     for(int row=num1-1; row>=1;row--){
 //     for(int column=1;column<=num1-row;column++){
 //         stdout.write("  ");
 //     }
@@ -318,8 +318,39 @@ main(){
 //     }
 //     print(" ");
 //   }
+// }
 
 
+
+//problem 14: 
+// //      1
+// //   1  2  3       //2*row-1
+// //1  2  3  4  5
+// //   1  2  3
+// //      1  
+
+// main(){
+//   print("Enter one number:");
+//   int num1=int.parse(stdin.readLineSync()!);
+//   for(int row=1; row<=num1;row++){
+//     for(int column=1;column<=num1-row;column++){
+//         stdout.write(" ");
+//     }
+//     for(int column=1;column<=2*row-1;column++){
+//         stdout.write(column);
+//     }
+//     print(" ");
+//   }
+
+//     for(int row=num1-1; row>=1;row--){
+//     for(int column=1;column<=num1-row;column++){
+//         stdout.write(" ");
+//     }
+//     for(int column=1;column<=2*row-1;column++){
+//         stdout.write(column);
+//     }
+//     print(" ");
+//   }
 // }
 
 
