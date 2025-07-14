@@ -354,3 +354,35 @@ import 'dart:io';
 // }
 
 
+//problem 15: 
+// //      1
+// //   1  0  1       //2*row-1
+// //1  0  1  0  1
+// //   1  0  1 
+// //      1  
+
+// main(){
+//   print("Enter one number:");
+//   int num1=int.parse(stdin.readLineSync()!);
+//   for(int row=1; row<=num1;row++){
+//     for(int column=1;column<=num1-row;column++){
+//         stdout.write(" ");
+//     }
+//     for(int column=1;column<=2*row-1;column++){
+//       int value=(column%2==0)? 0:1;
+//         stdout.write(value);
+//     }
+//     print(" ");
+//   }
+
+//     for(int row=num1-1; row>=1;row--){
+//     for(int column=1;column<=num1-row;column++){
+//         stdout.write(" ");
+//     }
+//     for(int column=1;column<=2*row-1;column++){
+//         int value=column%2==0? 0:1;
+//         stdout.write(value);
+//     }
+//     print(" ");
+//   }
+// }
