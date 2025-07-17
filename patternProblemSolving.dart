@@ -386,3 +386,39 @@ import 'dart:io';
 //     print(" ");
 //   }
 // }
+
+
+//problem 16: 
+// //      A
+// //   A  B  C       //2*row-1
+// //A  B  C  D  E
+// //   A  B  C  
+// //      A  
+
+// main(){
+//     print("Enter one number!");
+//     double number=double.parse(stdin.readLineSync()!);
+//     int num1=number.toInt();
+
+//     for(int row=1; row<=num1; row++){
+//         for(int column=1; column<=num1-row; column++){
+//             stdout.write("  ");
+//         }
+//         for(int column=1; column<=2*row-1; column++){
+//             stdout.write("${String.fromCharCode(column+64)} ");
+//         }
+//         print('');
+//     }
+
+//     for(int row=num1-1;row>=1;row--){
+//         for(int column=1; column<=num1-row; column++){
+//             stdout.write("  ");
+//         }
+//         for(int column=1; column<=2*row-1; column++){
+//             stdout.write("${String.fromCharCode(column+64)} ");
+//         }
+//         print('');
+//     }
+
+
+// }
