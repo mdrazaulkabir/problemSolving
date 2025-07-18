@@ -267,7 +267,7 @@ import 'dart:io';
 
 
 
-// //problem 12: 
+// //problem 12:    useing  Futute keyword with like anymation
 // //A B C D E
 // //A B C D E
 // //A B C D E
@@ -419,6 +419,65 @@ import 'dart:io';
 //         }
 //         print('');
 //     }
+// }
 
 
+//problem 17: //this poblem solve with amimation useing future
+// //      A
+// //   A  B  C       //2*row-1
+// //A  B  C  D  E
+// //   A  B  C  
+// //      A  
+// main()async{
+//     print("enter one number:");
+//     int num1=int.parse(stdin.readLineSync()!);
+//     await forLoop1(num1);
+//     await forLoop2(num1);
+// }
+// Future<void>forLoop1(int num1)async{
+//     for(int row=1; row<=num1; row++){
+//         for(int column=1; column<=num1-row; column++){
+//             stdout.write("   ");
+//         }
+//         for(int column=1; column<=2*row-1; column++){
+//             stdout.write("${String.fromCharCode(column+64)}  ");
+//             await Future.delayed(Duration(milliseconds: 200));
+//         }
+//         print(" ");
+//         //await Future.delayed(Duration(milliseconds: 200));
+//     }
+// }
+// Future<void>forLoop2(int num1)async{
+//     for(int row=num1-1; row>=1; row--){
+//         for(int column=1; column<=num1-row; column++){
+//             stdout.write("   ");
+//         }
+//         for(int column=1; column<=2*row-1; column++){
+//             stdout.write("${String.fromCharCode(column+64)}  ");
+//              await Future.delayed(Duration(milliseconds: 200));
+//         }
+//         print(" ");
+//         //await Future.delayed(Duration(seconds: 1));
+//     }
+// }
+
+
+
+// //problem 18:
+// //*  *  *  * 
+// //*        * 
+// //*        * 
+// //*  *  *  * 
+// main(){
+//     print("Enter one number:");
+//     String number=stdin.readLineSync()!;
+//     int num1=int.parse(number);
+//     for(int row =1; row<=num1; row++){
+//         for(int column=1; column<=num1; column++){
+//             if(row==1|| column==1|| column==num1||row==num1){
+//                 stdout.write(" * ");
+//             }
+//         }
+//         print(" ");
+//     }
 // }
