@@ -492,18 +492,40 @@ import 'dart:io';
 // //*     *
 // //*  *  *  * 
 
-main(){
-   print("Enter one number:");
-   int num1=int.parse(stdin.readLineSync()!);
-   for(int row=1; row<=num1;row++){
-    for(int column=1; column<=num1; column++){
-      if(column==1||row==num1||row==column){
-        stdout.write(" * ");
-      }
-      else{
-         stdout.write("   ");
-      }
-    }
-    print('');
-   }
-}
+// main(){
+//    print("Enter one number:");
+//    int num1=int.parse(stdin.readLineSync()!);
+//    for(int row=1; row<=num1;row++){
+//     for(int column=1; column<=num1; column++){
+//       if(column==1||row==num1||row==column){
+//         stdout.write(" * ");
+//       }
+//       else{
+//          stdout.write("   ");
+//       }
+//     }
+//     print('');
+//    }
+// }
+
+
+// // //problem 19:
+// //*     *
+// //  * * 
+// //  * * 
+// //*     *
+// main(){
+//   print("Enter one number:");
+//   int num1=int.parse(stdin.readLineSync()!);
+//   for(int row=1; row<=num1; row++){
+//     for(int column=1; column<=num1; column++){
+//       if(row==column|| row+column==num1+1){
+//         stdout.write("*");
+//       }
+//       else{
+//         stdout.write(" ");
+//       }
+//     }
+//     print('');
+//   }
+// }
