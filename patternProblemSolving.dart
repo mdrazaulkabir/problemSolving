@@ -509,7 +509,7 @@ import 'dart:io';
 // }
 
 
-// // //problem 19:
+// // //problem 20:
 // //*     *
 // //  * * 
 // //  * * 
@@ -528,4 +528,45 @@ import 'dart:io';
 //     }
 //     print('');
 //   }
+// }
+
+
+// //problem 21: 
+// //1
+// //2 3
+// //4 5 6
+// //7 8 9 10
+// main(){
+//   print("Enter one number:");
+//   int num1=int.parse(stdin.readLineSync()!);
+//   int count=0;
+//   for(int row=1; row<=num1; row++){
+//     for(int column=1; column<=row; column++){
+//       stdout.write(" ${++count} ");
+//     }
+//     print("");
+//   }
+// }
+
+////problem 21: now future 
+// //1
+// //2 3
+// //4 5 6
+// //7 8 9 10
+// main()async{
+//   print("Enter one number:");
+//   int num1=int.parse(stdin.readLineSync()!) ;
+//   await forloop1(num1);
+// }
+
+// Future<void>forloop1(int num1)async{
+//   int count=0;
+//   for(int row=1; row<=num1; row++){
+//     for(int column=1; column<=row; column++){
+//       stdout.write(" ${++count} ");
+//       await Future.delayed(Duration(milliseconds: 200));
+//     }
+//     print('');
+//   }
+
 // }
